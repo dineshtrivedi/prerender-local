@@ -1,0 +1,29 @@
+{
+  "name": "prerender-local",
+  "description": "Prerender locally",
+  "main": "index.js",
+  "authors": [
+    "Dinesh Trivedi"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "SEO",
+    "AngularJS",
+    "Prerender",
+    "NodeJs"
+  ],
+  "homepage": "https://github.com/dineshtrivedi/prerender-local",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "bootstrap": "^3.3.6"
+  }
+}

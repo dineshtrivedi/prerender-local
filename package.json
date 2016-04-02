@@ -1,0 +1,32 @@
+{
+  "name": "prerender-local",
+  "version": "1.0.0",
+  "description": "Prerender locally",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dineshtrivedi/prerender-local.git"
+  },
+  "keywords": [
+    "SEO",
+    "AngularJS",
+    "Prerender",
+    "NodeJs"
+  ],
+  "author": "Dinesh Trivedi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dineshtrivedi/prerender-local/issues"
+  },
+  "homepage": "https://github.com/dineshtrivedi/prerender-local#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "prerender-node": "^2.2.1"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7"
+  }
+}
