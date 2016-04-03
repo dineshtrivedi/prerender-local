@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="prerender-tutorial" ng-controller="mainController"> 
+<html ng-app="prerender-tutorial" ng-controller="MainController"> 
 <head>
 
   <meta name="fragment" content="!">
@@ -9,22 +9,14 @@
   <meta name="description" content="{{ seo.metaDescription }}">
 
   <!-- CSS-->
-  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.min.css">
   <style>
       body { margin-top:60px; }
   </style>
 
-  <!-- JS -->
-  <script src="/bower_components/angular/angular.js" type="application/javascript"></script>
-  <script src="/bower_components/angular-route/angular-route.js" type="application/javascript"></script>
-  <script src="/app.js"></script>
-
-
 </head> 
-<body> 
+<body ng-cloak> 
   <div class="container">
-
-    <!-- NAVIGATION BAR -->
     <div class="bs-example bs-navbar-top-example">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="navbar-header">
@@ -40,10 +32,26 @@
     </div>
 
     <h1 class="text-center">Welcome to the Angular SEO Prerender Tutorial</h1>
-    <!-- where we will inject our template data -->
-    <div ng-view></div>
-
-
+    <main ng-view></main>
   </div> 
+
+
+  <!-- JS -->
+  <script src="/angular/angular.js" type="application/javascript"></script>
+  <script src="/angular-route/angular-route.js" type="application/javascript"></script>
+  
+  <script src="/js/home/home.module.js" type="application/javascript"></script>
+  <script src="/js/about/about.module.js" type="application/javascript"></script>
+  <script src="/js/features/features.module.js" type="application/javascript"></script>
+  <script src="/js/app.module.js" type="application/javascript"></script>
+
+  <script src="/js/home/home.routes.js" type="application/javascript"></script>
+  <script src="/js/about/about.routes.js" type="application/javascript"></script>
+  <script src="/js/features/features.routes.js" type="application/javascript"></script>
+
+  <script src="/js/main.controller.js" type="application/javascript"></script>
+  <script src="/js/home/controllers/home.controller.js" type="application/javascript"></script>
+  <script src="/js/about/controllers/about.controller.js" type="application/javascript"></script>
+  <script src="/js/features/controllers/features.controller.js" type="application/javascript"></script>  
 </body> 
 </html>
